@@ -1,0 +1,2 @@
+# testnets
+Astra testnets repository
