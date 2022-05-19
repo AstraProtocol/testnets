@@ -15,7 +15,7 @@
 proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
-moniker = ""
+moniker = "localtestnet"
 
 # If this node is many blocks behind the tip of the chain, FastSync
 # allows them to catchup quickly by downloading blocks in parallel
@@ -47,7 +47,7 @@ db_backend = "goleveldb"
 db_dir = "data"
 
 # Output level for logging, including package level options
-log_level = "info"
+log_level = "debug"
 
 # Output format: 'plain' (colored text) or 'json'
 log_format = "plain"
@@ -209,7 +209,7 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = ""
+seeds = "a7adbfe36dc633c3c93e7deb8a6e4c0d22e821a8@167.71.213.62:26656,68997d1ef6b0a50be156d77fac98ac54e0a73604@157.245.192.163:26656,b44d804ed5d1308c0e31cbb297510d3e259dfcd4@157.245.206.123:26656,b71f816ebd24bbfaa79f2ed820f6cee0aee04aff@167.172.76.193:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
@@ -356,21 +356,21 @@ version = "v0"
 wal_file = "data/cs.wal/wal"
 
 # How long we wait for a proposal block before prevoting nil
-timeout_propose = "3s"
+timeout_propose = "2s"
 # How much timeout_propose increases with each round
-timeout_propose_delta = "500ms"
+timeout_propose_delta = "250ms"
 # How long we wait after receiving +2/3 prevotes for “anything” (ie. not a single block or nil)
-timeout_prevote = "1s"
+timeout_prevote = "500ms"
 # How much the timeout_prevote increases with each round
-timeout_prevote_delta = "500ms"
+timeout_prevote_delta = "250ms"
 # How long we wait after receiving +2/3 precommits for “anything” (ie. not a single block or nil)
-timeout_precommit = "1s"
+timeout_precommit = "500ms"
 # How much the timeout_precommit increases with each round
-timeout_precommit_delta = "500ms"
+timeout_precommit_delta = "250ms"
 # How long we wait after committing a block, before starting on the new
 # height (this gives us a chance to receive some more precommits, even
 # though we already have +2/3).
-timeout_commit = "1500ms"
+timeout_commit = "3s"
 
 # How many blocks to look back to check existence of the node's consensus votes before joining consensus
 # When non-zero, the node will panic upon restart

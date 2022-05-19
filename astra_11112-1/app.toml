@@ -8,13 +8,13 @@
 # The minimum gas prices a validator is willing to accept for processing a
 # transaction. A transaction's fees must meet the minimum of any denomination
 # specified in this config (e.g. 0.25token1;0.0001token2).
-minimum-gas-prices = "0aastra"
+minimum-gas-prices = "0.0001aastra"
 
 # default: the last 100 states are kept in addition to every 500th state; pruning at 10 block intervals
 # nothing: all historic states will be saved, nothing will be deleted (i.e. archiving node)
-# everything: all saved states will be deleted, storing only the current state; pruning at 10 block intervals
+# everything: all saved states will be deleted, storing only the current and previous state; pruning at 10 block intervals
 # custom: allow pruning options to be manually specified through 'pruning-keep-recent', 'pruning-keep-every', and 'pruning-interval'
-pruning = "default"
+pruning = "nothing"
 
 # These are applied if and only if the pruning strategy is custom.
 pruning-keep-recent = "0"
@@ -206,6 +206,9 @@ snapshot-keep-recent = 2
 # Valid types are: json|struct|access_list|markdown
 tracer = ""
 
+# MaxTxGasWanted defines the gas wanted for each eth tx returned in ante handler in check tx mode.
+max-tx-gas-wanted = 500000
+
 ###############################################################################
 ###                           JSON RPC Configuration                        ###
 ###############################################################################
@@ -223,7 +226,7 @@ ws-address = "0.0.0.0:8546"
 
 # API defines a list of JSON-RPC namespaces that should be enabled
 # Example: "eth,txpool,personal,net,debug,web3"
-api = "eth,txpool,personal,net,debug,web3"
+api = "eth,net,web3"
 
 # GasCap sets a cap on gas that can be used in eth_call/estimateGas (0=infinite). Default: 25,000,000.
 gas-cap = 25000000
