@@ -1,0 +1,12 @@
+{
+  "title":"Param-Change no_base_fee",
+  "description":"This is to change the no_base_fee on Testnet",
+  "changes":[
+    {
+      "subspace":"feemarket",
+      "key":"NoBaseFee",
+      "value":true
+    }
+  ],
+  "deposit":"1000000000000000000aastra"
+}

@@ -1,0 +1,12 @@
+{
+  "title":"Param-Change SignedBlocksWindow",
+  "description":"This is to change the SignedBlocksWindow on Testnet",
+  "changes":[
+    {
+      "subspace":"slashing",
+      "key":"SignedBlocksWindow",
+      "value": "300"
+    }
+  ],
+  "deposit":"100000000000000000000aastra"
+}

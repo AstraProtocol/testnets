@@ -1,0 +1,32 @@
+{
+  "title":"Parameter change: Signed block window, Min signed per window, Downtime jail duration, Slash fraction downtime, min deposit amount",
+  "description":"**Summary: increase signed blocks window to 20000, decrease min signed per window to 5%,\\n \n      increase downtime jail duration to 30 minutes, decrease slash fraction downtime to 0.01%,\\n \n      increase proposal deposit amount to 10000 AASTRA.** \\n\\n\n      This param change proposal will raise the minimum deposit amount to 20000 AASTRA. We do see the need to raise the fees to prevent spam.",
+  "changes":[
+    {
+      "subspace":"slashing",
+      "key":"SignedBlocksWindow",
+      "value": "20000"
+    },
+    {
+      "subspace":"slashing",
+      "key":"MinSignedPerWindow",
+      "value": "0.05"
+    },
+    {
+      "subspace":"slashing",
+      "key":"DowntimeJailDuration",
+      "value": "1800"
+    },
+    {
+      "subspace":"slashing",
+      "key":"SlashFractionDowntime",
+      "value": "0.0001"
+    },
+    {
+      "subspace":"gov",
+      "key":"depositparams",
+      "value": {"min_deposit":[{"denom":"aastra","amount":"20000000000000000000000"}]}
+    }
+  ],
+  "deposit":"100000000000000000000aastra"
+}
