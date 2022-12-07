@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-12-07T03:02:12.530342Z",
+  "genesis_time": "2022-12-07T03:32:44.623652Z",
   "chain_id": "astra_11115-3",
   "initial_height": "1",
   "consensus_params": {
@@ -34,7 +34,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "astra1z758wk79e72geqqayum7j56ygfv0uw2eclg9s6",
+            "address": "astra12g85x4xkw8j03tpznmexytrxm2q7n6vkrw4uh3",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -44,7 +44,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "astra1yjqqw9a340sdym3lmraxmzn6j7z4f5esn5sl4x",
+            "address": "astra1uwk3peuwznzkazkptp0ys7s5ny6pldft4s085r",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -54,7 +54,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "astra15d7ulc5d5fgk8m06c3h2vjq2l9qucg0aqatkac",
+            "address": "astra1h3gl3rrkqjyll0svp92rhuh82gvn5uz6etxj3l",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -64,7 +64,7 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "astra1muzpn8uzyv7kjqpn2kjl48pe6axqxmgef82ea0",
+            "address": "astra123td0md60sp5cwczw66slj9pd2q53r678rru7h",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -74,7 +74,17 @@
         {
           "@type": "/ethermint.types.v1.EthAccount",
           "base_account": {
-            "address": "astra1v32lncw56me7qa3sjkehtudc99765q624ggtdw",
+            "address": "astra1kwdtnzrvgvljmjgnnrgacda9xqymkkqu0mr46g",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "astra1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8y4fl3r",
             "pub_key": null,
             "account_number": "0",
             "sequence": "0"
@@ -106,7 +116,7 @@
       },
       "balances": [
         {
-          "address": "astra1z758wk79e72geqqayum7j56ygfv0uw2eclg9s6",
+          "address": "astra12g85x4xkw8j03tpznmexytrxm2q7n6vkrw4uh3",
           "coins": [
             {
               "denom": "aastra",
@@ -115,20 +125,11 @@
           ]
         },
         {
-          "address": "astra1yjqqw9a340sdym3lmraxmzn6j7z4f5esn5sl4x",
+          "address": "astra123td0md60sp5cwczw66slj9pd2q53r678rru7h",
           "coins": [
             {
               "denom": "aastra",
-              "amount": "480000000000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "astra1v32lncw56me7qa3sjkehtudc99765q624ggtdw",
-          "coins": [
-            {
-              "denom": "aastra",
-              "amount": "1000000000000000000"
+              "amount": "119999999000000000000000000"
             }
           ]
         },
@@ -142,7 +143,16 @@
           ]
         },
         {
-          "address": "astra15d7ulc5d5fgk8m06c3h2vjq2l9qucg0aqatkac",
+          "address": "astra1kwdtnzrvgvljmjgnnrgacda9xqymkkqu0mr46g",
+          "coins": [
+            {
+              "denom": "aastra",
+              "amount": "1000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "astra1h3gl3rrkqjyll0svp92rhuh82gvn5uz6etxj3l",
           "coins": [
             {
               "denom": "aastra",
@@ -151,11 +161,11 @@
           ]
         },
         {
-          "address": "astra1muzpn8uzyv7kjqpn2kjl48pe6axqxmgef82ea0",
+          "address": "astra1uwk3peuwznzkazkptp0ys7s5ny6pldft4s085r",
           "coins": [
             {
               "denom": "aastra",
-              "amount": "119999999000000000000000000"
+              "amount": "480000000000000000000000000"
             }
           ]
         }
@@ -298,11 +308,11 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "astra1v32lncw56me7qa3sjkehtudc99765q624ggtdw",
-                "validator_address": "astravaloper1v32lncw56me7qa3sjkehtudc99765q62s3f6kq",
+                "delegator_address": "astra1kwdtnzrvgvljmjgnnrgacda9xqymkkqu0mr46g",
+                "validator_address": "astravaloper1kwdtnzrvgvljmjgnnrgacda9xqymkkqu2zzypx",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "jD7k80XXm+FK9z7ITHzL2soZS9heajj+mE+brV9Fvo0="
+                  "key": "dwyBL1vdWwGc+UKGfH8pciVQhpXw3oILGmk7IqBRHO0="
                 },
                 "value": {
                   "denom": "aastra",
@@ -310,7 +320,7 @@
                 }
               }
             ],
-            "memo": "c0c76101c2bbd777a0f39898875706904cf49173@192.168.2.5:26656",
+            "memo": "3c5cf1bbf56389e8341848550001a7e22ae2cb9b@192.168.2.5:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -320,7 +330,7 @@
               {
                 "public_key": {
                   "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
-                  "key": "AsqLyK30x3OXCa9XWd5srNJGFJm5BJJpPHGZmZIvaScm"
+                  "key": "AhygZBH7fU85/7KzC7KtMCK8m7ArmiE+bJ0v0DJagAEc"
                 },
                 "mode_info": {
                   "single": {
@@ -338,7 +348,7 @@
             }
           },
           "signatures": [
-            "5tiRkXQVnNNS2DETK1KoH+LQpT7mumMjRYXGMSo3WrUGDIbUw8g/BhCKiOANc24OUOrACb/uvBwn1IjgUlNnpQE="
+            "WqxDrkw3CioUcjsi+iTgAQNnasIqcyB+S0po60rM9joUKEMb9Wfy5SdUJWbpeSrL0LshvqOE1kUhmATre9KI7gE="
           ]
         }
       ]
