@@ -163,7 +163,7 @@ offline = false
 [grpc]
 
 # Enable defines if the gRPC server should be enabled.
-enable = true
+enable = false
 
 # Address defines the gRPC server address to bind to.
 address = "0.0.0.0:9090"
@@ -176,7 +176,7 @@ address = "0.0.0.0:9090"
 
 # GRPCWebEnable defines if the gRPC-web should be enabled.
 # NOTE: gRPC must also be enabled, otherwise, this configuration is a no-op.
-enable = true
+enable = false
 
 # Address defines the gRPC-web server address to bind to.
 address = "0.0.0.0:9091"
@@ -220,7 +220,7 @@ max-tx-gas-wanted = 0
 [json-rpc]
 
 # Enable defines if the gRPC server should be enabled.
-enable = true
+enable = false
 
 # Address defines the EVM RPC HTTP server address to bind to.
 address = "0.0.0.0:8545"
