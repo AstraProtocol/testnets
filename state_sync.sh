@@ -20,7 +20,7 @@ s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"http://188.166.244.135:26657,ht
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.astrad/config/config.toml
-sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"3ed159940fb9ff88a9c2b99fe5daca048e44f609@188.166.244.135:26656,6ccec303890e83c8b64ff0501cdb6ea3e7b4b1b5@178.62.54.148:26656"#' ~/.astrad/config/config.toml
+sed -i.bak -E 's#^(seeds[[:space:]]+=[[:space:]]+).*$#\1"3ed159940fb9ff88a9c2b99fe5daca048e44f609@188.166.244.135:26656,92b8e746f0b76c1845c9348f7da9f8eec9727a76@157.230.41.37:26656"#' ~/.astrad/config/config.toml
 
 
 # astrad start --x-crisis-skip-assert-invariants
