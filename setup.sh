@@ -38,24 +38,27 @@ setup_astra() {
     ./astrad init $NODE_NAME --chain-id astra_11115-1
     cd ~/.astrad/config
     curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/genesis.json > genesis.json
-    curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/config.toml  > config.toml
     sed -i "s/genesisValidator/$NODE_NAME/" config.toml
     if [[ "$NODE_TYPE" == "RPC" ]];
     then
         fancy_echo "download rpc"
-        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/api/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/api/config.toml  > config.toml
     elif [[ "$NODE_TYPE" == "VALIDATOR" ]];
     then
         fancy_echo "download validator"
-        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/validators/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/validators/config.toml  > config.toml
    elif [[ "$NODE_TYPE" == "API" ]];
     then
         fancy_echo "download api"
-        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/api/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/api/config.toml  > config.toml
     elif [[ "$NODE_TYPE" == "FULLNODE" ]];
     then
         fancy_echo "download fullnode"
-        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/fullnode/app.toml  > app.toml
+        curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/fullnode/config.toml  > config.toml
     fi
 }
 fancy_echo "setting golang"
