@@ -1,13 +1,13 @@
 #!/bin/bash
 set -uxe
 
-curl https://raw.githubusercontent.com/AstraProtocol/testnet/main/astra_11115-1/genesis.json > ~/.astrad/config/genesis.json
+curl https://raw.githubusercontent.com/AstraProtocol/testnets/main/astra_11115-1/genesis.json > ~/.astrad/config/genesis.json
 INTERVAL=10000
 # GET TRUST HASH AND TRUST HEIGHT
 
 LATEST_HEIGHT=$(curl -s http://188.166.244.135:26657/block | jq -r .result.block.header.height);
 BLOCK_HEIGHT=$(($LATEST_HEIGHT-$INTERVAL))
-TRUST_HASH=$(curl -s "https://cosmos.astranaut.io:26657/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
+TRUST_HASH=$(curl -s "http://188.166.244.135:26657/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
 
 
 
